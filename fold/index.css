@@ -1,0 +1,169 @@
+.App{
+  --background-color: #FFF9F5;
+  --text-color: #262a33;
+  --line-color: #333;
+  --link-color: #184880;
+  --box-color: #bdbdbd;
+  --muted-text-color: #6c757d;
+  --font-family: "Alegreya", Georgia, "Times New Roman", serif;
+}
+
+.App[data-theme="dark"] {
+  --background-color: #070707;
+  --muted-text-color: #7a7a79;
+  --text-color:rgba(255, 255, 255, 0.938);
+  --line-color: #ccc;
+  --link-color: #007bffd3;;
+}
+
+.App {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+a {
+  color: var(--link-color);
+
+}
+
+.news-section {
+  padding-top: 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.news-section-header {
+  padding: 0 0 0 1.25rem;
+}
+
+.news-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+}
+
+.news-card small {
+  color: var(--muted-text-color);
+}
+
+.news-title a {
+  color: var(--text-color)
+}
+
+.news-description {
+  /* limit lines to show */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+
+  margin-bottom: 0.25rem;
+  color: var(--muted-text-color);
+}
+
+.news-meta {
+  margin-bottom: 0.5rem;
+}
+
+.news-related {
+  border-top: 1px dashed rgba(0, 0, 0, 0.125) !important;
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
+}
+
+.news-related li {
+  background-color: var(--background-color);
+  border: none;
+  padding-bottom: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.news-related small {
+  margin-left: 0.5rem;
+}
+
+.news-footer {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.news-hash-tag {
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.news-loading {
+  padding-bottom: 5rem;
+}
+
+/* Masonry */
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.news-section-read-more {
+  padding: 0 2.5rem 0 0.5rem;
+  text-transform: capitalize
+}
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+.news-header {
+  line-height: 1;
+  border-bottom: 1px solid var(--line-color);
+  margin-bottom: 1.25rem;
+  background-color: var(--background-color) !important;
+}
+
+.blog-header-logo {
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+}
+
+.ScrollUpButton__Container{
+  background: rgba(0, 0, 0, 0.125) !important;
+}
+.news-bar-content{
+  text-align: center;
+}
+
+.title_navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.title_navbar-right {
+  position: absolute;
+  left: 75%;
+  transform: translatex(-25%);
+}
+
+.navbar-title {
+  font-size: 1.75rem;
+  --text-color:var(--text-color) ;
+}
